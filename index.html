@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JOKER — Build Empires, Move Markets</title>
+  
+  <!-- SEO Metadata -->
+  <meta name="description" content="THE JOKER — Complete construction, trading, investment, USDT exchange, premium car rental, GAC Chinese vehicles, banking, and recruitment solutions. Your empire awaits.">
+  <meta name="keywords" content="Joker, Construction, Trading, USDT, Crypto Exchange, Car Rental UAE, GAC Cars, Banking, Recruitment">
+  <meta name="author" content="JOKER">
+  <meta property="og:title" content="JOKER — Build Empires, Move Markets">
+  <meta property="og:description" content="Professional single-page corporate portal with dark cinematic branding. Construction, investments, vehicles, and global recruitment solutions.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="joker_portrait.png">
+  
+  <!-- Favicon using 🃏 emoji -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🃏</text></svg>">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Left: Logo -->
+      <a href="#home" class="logo" id="nav-logo">
+        🃏 JOKER
+      </a>
+      
+      <!-- Center: Navigation Menu -->
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item active"><a href="#home" data-i18n="nav_home">Home</a></li>
+        <li class="nav-item"><a href="#services" data-i18n="nav_services">Services</a></li>
+        <li class="nav-item"><a href="#about" data-i18n="nav_about">About</a></li>
+        <li class="nav-item"><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+      
+      <!-- Right: Action elements / Lang Toggle -->
+      <div class="nav-actions">
+        <button class="lang-toggle" id="lang-toggle" aria-label="Toggle Language" data-i18n="nav_lang">
+          🌐 EN | عربي
+        </button>
+        
+        <!-- Mobile hamburger menu -->
+        <div class="hamburger" id="hamburger" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. HERO SECTION -->
+  <section class="hero" id="home">
+    <!-- Animated Particle Canvas Background -->
+    <div id="particles-container">
+      <canvas id="particles-canvas"></canvas>
+    </div>
+    
+    <div class="hero-grid">
+      <!-- Left side: Split Visual Panels -->
+      <div class="hero-visual scroll-animate-left">
+        <div class="cinema-panel">
+          <img src="joker_dollar.png" alt="Joker Gold and Money Theme" loading="lazy">
+          <!-- Neon Red Glowing Triangle Lines -->
+          <div class="neon-glow-line"></div>
+        </div>
+        <div class="cinema-panel">
+          <img src="joker_portrait.png" alt="Joker Face Portrait Theme" loading="lazy">
+        </div>
+      </div>
+      
+      <!-- Right side: Cinematic Copy -->
+      <div class="hero-content scroll-animate-right">
+        <h1 class="hero-title" data-i18n="hero_title">THE JOKER — YOUR EMPIRE AWAITS</h1>
+        <p class="hero-subtitle" data-i18n="hero_subtitle">God Has Favored Our Undertaking</p>
+        <a href="#contact" class="cta-button" data-i18n="hero_cta">REQUEST A SERVICE</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. MARQUEE / TICKER BAR -->
+  <div class="marquee-bar" id="marquee-bar">
+    <div class="marquee-content">
+      <span class="marquee-text" data-i18n="ticker_text">
+        🃏 JOKER SERVICES • CONSTRUCTION • TRADING • USDT • CAR RENTAL UAE • VEHICLES KUWAIT • GAC CHINA CARS • BANKING • RECRUITMENT • 🃏
+      </span>
+    </div>
+  </div>
+
+  <!-- 4. SERVICES SECTION -->
+  <section class="section" id="services">
+    <div class="container">
+      <h2 class="section-title" data-i18n="services_title">OUR SERVICES ♠️</h2>
+      
+      <div class="services-grid">
+        
+        <!-- CARD 1: CONSTRUCTION & FINISHING (FEATURED - FULL WIDTH) -->
+        <div class="service-card glass-panel featured-full scroll-animate">
+          <div class="featured-card-visual">
+            <img src="joker_nature.png" alt="Cinematic Landscape Banner" loading="lazy">
+          </div>
+          <div class="featured-info-pane">
+            <span class="card-badge" data-i18n="services_flagship">⭐ FLAGSHIP SERVICE</span>
+            <div class="card-icon">🏗️</div>
+            <h3 class="card-title" data-i18n="service_1_title">CONSTRUCTION & FINISHING</h3>
+            <p class="card-desc" data-i18n="service_1_desc">Complete construction and finishing solutions — from foundations to final touches. Quality builds that last a lifetime.</p>
+            <button class="card-btn card-request-btn" data-service-id="construction" data-i18n="services_request_btn">Request This Service</button>
+          </div>
+        </div>
+
+        <!-- CARD 2: TRADING & INVESTMENT (FEATURED - MEDIUM) -->
+        <div class="service-card glass-panel featured-medium scroll-animate">
+          <span class="card-badge" data-i18n="services_flagship">⭐ FLAGSHIP SERVICE</span>
+          <div>
+            <div class="card-icon">📈</div>
+            <h3 class="card-title" data-i18n="service_2_title">TRADING & INVESTMENT</h3>
+            <p class="card-desc" data-i18n="service_2_desc">Expert trading services including USDT cryptocurrency and financial market investments. Your wealth, multiplied.</p>
+          </div>
+          <button class="card-btn card-request-btn" data-service-id="trading" data-i18n="services_request_btn">Request This Service</button>
+        </div>
+
+        <!-- CARD 3: USDT & CRYPTO EXCHANGE -->
+        <div class="service-card glass-panel scroll-animate">
+          <div>
+            <div class="card-icon">💵</div>
+            <h3 class="card-title" data-i18n="service_3_title">USDT & CRYPTO EXCHANGE</h3>
+            <p class="card-desc" data-i18n="service_3_desc">Secure and fast USDT transactions. Buy, sell, and exchange with confidence.</p>
+          </div>
+          <button class="card-btn card-request-btn" data-service-id="usdt" data-i18n="services_request_btn">Request This Service</button>
+        </div>
+
+        <!-- CARD 4: CAR RENTAL — UAE -->
+        <div class="service-card glass-panel scroll-animate">
+          <div>
+            <div class="card-icon">🚗</div>
+            <h3 class="card-title" data-i18n="service_4_title">CAR RENTAL — UAE</h3>
+            <p class="card-desc" data-i18n="service_4_desc">Premium car rental services across the United Arab Emirates. Drive in style.</p>
+          </div>
+          <button class="card-btn card-request-btn" data-service-id="car_uae" data-i18n="services_request_btn">Request This Service</button>
+        </div>
+
+        <!-- CARD 5: BUY & SELL VEHICLES — KUWAIT -->
+        <div class="service-card glass-panel scroll-animate">
+          <div>
+            <div class="card-icon">🏎️</div>
+            <h3 class="card-title" data-i18n="service_5_title">BUY & SELL VEHICLES — KUWAIT</h3>
+            <p class="card-desc" data-i18n="service_5_desc">Best deals on buying and selling vehicles in Kuwait. All makes and models.</p>
+          </div>
+          <button class="card-btn card-request-btn" data-service-id="vehicles_kuwait" data-i18n="services_request_btn">Request This Service</button>
+        </div>
+
+        <!-- CARD 6: GAC CHINESE VEHICLES — UAE -->
+        <div class="service-card glass-panel scroll-animate">
+          <div>
+            <div class="card-icon">🇨🇳</div>
+            <h3 class="card-title" data-i18n="service_6_title">GAC CHINESE VEHICLES — UAE</h3>
+            <p class="card-desc" data-i18n="service_6_desc">Official supplier of GAC Chinese vehicles in the UAE. Modern technology, competitive pricing.</p>
+          </div>
+          <button class="card-btn card-request-btn" data-service-id="gac_uae" data-i18n="services_request_btn">Request This Service</button>
+        </div>
+
+        <!-- CARD 7: BANKING SERVICES -->
+        <div class="service-card glass-panel scroll-animate">
+          <div>
+            <div class="card-icon">🏦</div>
+            <h3 class="card-title" data-i18n="service_7_title">BANKING SERVICES</h3>
+            <p class="card-desc" data-i18n="service_7_desc">Comprehensive banking and financial solutions. Account setup, transfers, and more.</p>
+          </div>
+          <button class="card-btn card-request-btn" data-service-id="banking" data-i18n="services_request_btn">Request This Service</button>
+        </div>
+
+        <!-- CARD 8: HR & RECRUITMENT -->
+        <div class="service-card glass-panel scroll-animate">
+          <div>
+            <div class="card-icon">👥</div>
+            <h3 class="card-title" data-i18n="service_8_title">HR & RECRUITMENT</h3>
+            <p class="card-desc" data-i18n="service_8_desc">Connecting talent with opportunity. Recruitment solutions for businesses and job seekers.</p>
+          </div>
+          <button class="card-btn card-request-btn" data-service-id="hr" data-i18n="services_request_btn">Request This Service</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. ABOUT SECTION -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Left side: Comic style Joker visual with bold text overlay -->
+        <div class="about-visual scroll-animate-left">
+          <img src="joker_comic.png" alt="Comic Illustrated Joker" loading="lazy">
+          <div class="about-visual-text">JOKER</div>
+        </div>
+        
+        <!-- Right side: Quote block and stats -->
+        <div class="about-content scroll-animate-right">
+          <!-- Quote block -->
+          <div class="quote-block">
+            <p class="quote-text" id="quote-text" data-i18n="about_quote">
+              "The Joker doesn't play by the rules — we build empires, move markets, and create opportunities where others see none."
+            </p>
+            <div class="quote-author">🃏 THE JOKER</div>
+          </div>
+          
+          <!-- Stats Row -->
+          <div class="stats-row">
+            <!-- Stat 1 -->
+            <div class="stat-card glass-panel">
+              <div class="stat-number glowing-text-red" data-target="500" data-suffix="+">0</div>
+              <div class="stat-label" data-i18n="about_stat_1_label">Projects Completed</div>
+            </div>
+            <!-- Stat 2 -->
+            <div class="stat-card glass-panel">
+              <div class="stat-number glowing-text-gold" data-target="3" data-suffix="">0</div>
+              <div class="stat-label" data-i18n="about_stat_2_label">Countries</div>
+            </div>
+            <!-- Stat 3 -->
+            <div class="stat-card glass-panel">
+              <div class="stat-number glowing-text-green" data-target="24" data-suffix="/7">0</div>
+              <div class="stat-label" data-i18n="about_stat_3_label">24/7 Support</div>
+            </div>
+            <!-- Stat 4 -->
+            <div class="stat-card glass-panel">
+              <div class="stat-number glowing-text-red" data-target="100" data-suffix="%">0</div>
+              <div class="stat-label" data-i18n="about_stat_4_label">Satisfaction Rate</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. CONTACT SECTION -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title" data-i18n="contact_title">SEND YOUR REQUEST TO THE JOKER</h2>
+      
+      <div class="contact-grid">
+        
+        <!-- Left: Branding & Info Pane -->
+        <div class="contact-info scroll-animate-left">
+          <div class="contact-text-block">
+            <h3 class="logo glowing-text-red">🃏 JOKER EMPIRE</h3>
+            <p data-i18n="about_quote">The Joker doesn't play by the rules — we build empires, move markets, and create opportunities where others see none.</p>
+          </div>
+          
+          <div class="contact-methods">
+            <div class="contact-method-item">
+              <div class="contact-method-icon">📍</div>
+              <div class="contact-method-detail">
+                <h4>HQ Location</h4>
+                <p>Dubai, United Arab Emirates</p>
+              </div>
+            </div>
+            
+            <div class="contact-method-item">
+              <div class="contact-method-icon">📧</div>
+              <div class="contact-method-detail">
+                <h4>Direct Channel</h4>
+                <p>ops@joker-empire.com</p>
+              </div>
+            </div>
+            
+            <div class="contact-method-item">
+              <div class="contact-method-icon">💬</div>
+              <div class="contact-method-detail">
+                <h4>WhatsApp Hotwire</h4>
+                <p>+971 50 000 0000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right: The Request Form Panel -->
+        <div class="contact-form-pane glass-panel scroll-animate-right">
+          <form id="joker-contact-form" autocomplete="off">
+            <div class="form-group">
+              <label for="form-name" class="form-label" data-i18n="contact_label_name">Full Name</label>
+              <input type="text" id="form-name" class="form-input" data-i18n-placeholder="contact_placeholder_name" placeholder="Enter your full name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="form-phone" class="form-label" data-i18n="contact_label_phone">Phone / WhatsApp Number</label>
+              <input type="tel" id="form-phone" class="form-input" data-i18n-placeholder="contact_placeholder_phone" placeholder="Enter your phone/WhatsApp number" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="form-email" class="form-label" data-i18n="contact_label_email">Email Address</label>
+              <input type="email" id="form-email" class="form-input" data-i18n-placeholder="contact_placeholder_email" placeholder="Enter your email address" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="form-service" class="form-label" data-i18n="contact_label_service">Service Needed</label>
+              <select id="form-service" class="form-select" required>
+                <!-- Filled dynamically by script.js -->
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="form-message" class="form-label" data-i18n="contact_label_message">Message / Request Details</label>
+              <textarea id="form-message" class="form-textarea" data-i18n-placeholder="contact_placeholder_message" placeholder="Describe your request in detail..." required></textarea>
+            </div>
+            
+            <button type="submit" class="form-submit-btn" id="form-submit-btn" data-i18n="contact_submit">SEND REQUEST 🃏</button>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTO-REPLY SYSTEM SUCCESS OVERLAY MODAL -->
+  <div class="modal-overlay" id="success-modal">
+    <div class="modal-card">
+      <div class="modal-joker-icon">🃏</div>
+      <h3 class="glowing-text-red" id="modal-title-i18n" data-i18n="modal_title">🃏 THE JOKER HAS RECEIVED YOUR REQUEST</h3>
+      
+      <!-- ASCII Success Message Board -->
+      <div class="ascii-box" id="ascii-box-content">
+        <!-- Filled dynamically by script.js -->
+      </div>
+      
+      <button class="modal-close-btn" id="modal-close-btn" data-i18n="modal_close">GOT IT</button>
+    </div>
+  </div>
+
+  <!-- 7. FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-brand">
+          <div class="logo">🃏 JOKER</div>
+          <p data-i18n="footer_tagline">Build Empires, Move Markets.</p>
+        </div>
+        <!-- Col 2: Quick Links -->
+        <div class="footer-links-col">
+          <h3 data-i18n="footer_quick_links">Quick Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="#home" data-i18n="nav_home">Home</a></li>
+            <li><a href="#services" data-i18n="nav_services">Services</a></li>
+            <li><a href="#about" data-i18n="nav_about">About</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Col 3: Social follow -->
+        <div class="footer-links-col">
+          <h3 data-i18n="footer_follow_us">Follow Us</h3>
+          <div class="footer-social-icons">
+            <a href="#" class="social-icon-btn" aria-label="Instagram">📸</a>
+            <a href="#" class="social-icon-btn" aria-label="Telegram">✈️</a>
+            <a href="https://wa.me/971500000000" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="footer-whatsapp-svg" fill="currentColor">
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Bottom rights -->
+      <div class="footer-bottom">
+        <p data-i18n="footer_rights">© 2025 JOKER — All Rights Reserved</p>
+      </div>
+    </div>
+    
+    <!-- Developer Credit Bar -->
+    <div class="dev-credit">
+      <span class="credit-text" data-i18n="credit_developed_by">⚡ Designed & Developed by</span>
+      <span class="ats-badge">ATS</span>
+      <span class="company-name" data-i18n="credit_company">Alaya Tech Solutions</span>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/971500000000" target="_blank" rel="noopener noreferrer" class="whatsapp-widget" id="whatsapp-widget" aria-label="Contact on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="whatsapp-icon-svg" fill="currentColor">
+      <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+    </svg>
+  </a>
+
+  <!-- Embedded JS scripts (Translations dictionary first, then Controller logic) -->
+  <script src="translations.js"></script>
+  <script src="script.js" defer></script>
+
+</body>
+</html>
